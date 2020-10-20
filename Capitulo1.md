@@ -30,3 +30,22 @@ Tabla 1.1: Lista de familias y arquitecturas ARM
 
 
 **El lenguaje ensamblador**
+
+El ensamblador es un lenguaje de bajo nivel que permite un control directo de la CPU y todos los elementos asociados. Cada línea de un programa ensamblador
+consta de una instrucción del procesador y la posición que ocupan los datos de esa instrucción.
+
+Desarrollar programas en lenguaje ensamblador es un proceso laborioso. El procedimiento es similar al de cualquier lenguaje compilado. Un conjunto de instrucciones
+y/o datos forman un módulo fuente. Este módulo es la entrada del compilador, que chequea la sintaxis y lo traduce a código máquina formando un módulo objeto. 
+Finalmente, un enlazador (montador ó linker) traduce todas las referencias relativas a direcciones absolutas y termina generando el ejecutable.
+
+**El entorno**
+
+Los pasos habituales para hacer un programa (en cualquier lenguaje) son los
+siguientes: lo primero es escribir el programa en el lenguaje fuente mediante un editor de programas. El resultado es un fichero en un lenguaje que puede entender el
+usuario, pero no la máquina. Para traducirlo a lenguaje máquina hay que utilizar un programa traductor. Éste genera un fichero con la traducción de dicho programa,
+pero todavía no es un programa ejecutable. Un fichero ejecutable contiene el programa traducido más una serie de códigos que debe tener todo programa que vaya a ser
+ejecutado en una máquina determinada. Entre estos códigos comunes se encuentran las librerías del lenguaje. El encargado de unir el código del programa con el código
+de estas librerías es un programa llamado montador (linker) que genera el programa ejecutable.
+
+![](https://i.imgur.com/l347OmX.png)
+
