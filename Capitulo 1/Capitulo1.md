@@ -47,5 +47,5 @@ pero todavía no es un programa ejecutable. Un fichero ejecutable contiene el pr
 ejecutado en una máquina determinada. Entre estos códigos comunes se encuentran las librerías del lenguaje. El encargado de unir el código del programa con el código
 de estas librerías es un programa llamado montador (linker) que genera el programa ejecutable.
 
-![](https://i.imgur.com/l347OmX.png)
+![](https://github.com/MelchorLuis/LecturaYEjercicios/blob/main/Capitulo%201/Imagenes/Ficheros.png?raw=true)
 
