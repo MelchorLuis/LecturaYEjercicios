@@ -18,13 +18,13 @@ de suficientes registros, por lo que podemos hacer el procesamiento sin necesida
 
 El operando fuente es una constante, formando parte de la instrucción.
 
-DIRECCIONAMIENTO INMEDIATO IMAGEN
+![](https://github.com/MelchorLuis/LecturaYEjercicios/blob/main/Capitulo%202/imagenes/direccionamiento%20inmediato.png?raw=true)
 
 **Direccionamiento inmediato con desplazamiento o rotación**
 
 Es una variante del anterior en la cual se permiten operaciones intermedias sobre los registros.
 
-DIRECCIONAMIENTO INMEDIATO CON DESPLAZAMIENTO IMAGEN
+![](https://github.com/MelchorLuis/LecturaYEjercicios/blob/main/Capitulo%202/imagenes/rotacion.png?raw=true)
 
 Estas instrucciones también se usan implicitamente para la creación de constantes, rotando o desplazando constantes más pequeñas de forma transparente al usuario. 
 Como todas las instrucciones ocupan 32 bits, es técnicamente imposible que podamos cargar en un registro cualquier constante de 32 bits con la instrucción mov. 
@@ -38,6 +38,8 @@ Es la forma más sencilla y admite 4 variantes. Después del acceso a memoria ni
 [Rx, #-inmediato]
 Simplemente añade (o sustrae) un valor inmediato al registro dado para calcular la dirección. Es muy útil para acceder a elementos fijos de un array, ya que el 
 desplazamiento es constante. Por ejemplo si tenemos r1 apuntando a un array de enteros de 32 bits int a[] y queremos poner a 1 el elemento a[3], lo hacemos así:
+
+![](https://github.com/MelchorLuis/LecturaYEjercicios/blob/main/Capitulo%202/imagenes/direccionamiento%20a%20memoria.png?raw=true)
 
 ### Tipos de datos
 
@@ -59,3 +61,7 @@ según los flags que interpretemos delresultado de la operación.
 Un puntero siempre ocupa 32 bits y contiene una dirección de memoria. En ensamblador no tienen tanta utilidad como en C, ya que disponemos de registros
 de sobra y es más costoso acceder a las variables a través de los punteros que directamente. En este ejemplo acceder a la dirección de var1 nos cuesta 2 ldrs a través
 del puntero, mientras que directamente se puede hacer con uno sólo.
+
+![](https://github.com/MelchorLuis/LecturaYEjercicios/blob/main/Capitulo%202/imagenes/nano%20punteros.s.png?raw=true)
+
+![](https://github.com/MelchorLuis/LecturaYEjercicios/blob/main/Capitulo%202/imagenes/punteros.png?raw=true)
