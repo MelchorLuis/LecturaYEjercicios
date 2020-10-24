@@ -53,3 +53,8 @@ de estas librerías es un programa llamado montador (linker) que genera el progr
 
 ![](https://github.com/MelchorLuis/LecturaYEjercicios/blob/main/Capitulo%201/Imagenes/Ficheros.png?raw=true)
 
+## Programa intro1.S Corriendo en rapsberry pi 
+
+Como no tiene algo como tal, así aparece: 
+
+![](https://github.com/MelchorLuis/LecturaYEjercicios/blob/main/Capitulo%201/Imagenes/ensamblador%20corriendo.png?raw=true)
